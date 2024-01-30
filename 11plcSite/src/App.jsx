@@ -25,7 +25,7 @@ function Contact(){
 
   function handleSubscribe(e){
     e.preventDefault()
-    axios.post('http://localhost:5000/plc/subscribe', {email: mail})
+    axios.post('https://one1plcbackend.onrender.com/plc/subscribe', {email: mail})
     .then((res) => toast.info(res.data.message, {position: toast.POSITION.TOP_RIGHT}))
     .then(() => setMail({email: ""}))
     .catch(err => {
