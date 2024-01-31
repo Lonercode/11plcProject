@@ -37,7 +37,7 @@ const subscriberController = async(req, res, next) => {
             './templates/confirm.hbs'
 
         )
-        res.json({message: `Thank you, check your email for confirmation. ${link}`})
+        res.json({message: `Thank you, check your email for confirmation.`})
         
         
     }
