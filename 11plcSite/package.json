@@ -1,7 +1,6 @@
 {
   "name": "11plcsite",
   "private": true,
-  "proxy": "https://one1plcbackend.onrender.com",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
