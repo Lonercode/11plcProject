@@ -55,7 +55,7 @@ const confirmController = async (req, res, next) => {
                 req.user,
                 {verified: true}
             )
-            res.sendFile(path.join(__dirname, 'utils/templates', 'confirmHtml.html'))
+            res.sendFile(path.join(__dirname, 'utils', 'templates','confirmHtml.html'))
     
         }
         else{
