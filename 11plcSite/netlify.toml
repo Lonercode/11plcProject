@@ -8,8 +8,3 @@
   to = "/index.html"
   status = 200
 
-[[redirects]]
-  from = "api/*"
-  to = "https://one1plcbackend.onrender.com"
-  status = 200
-  force = true
