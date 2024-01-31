@@ -4,6 +4,7 @@ const sendMail = require('../utils/sendMail')
 const otplib = require('otplib')
 const totp = otplib.totp
 const jwt= require('jsonwebtoken')
+const path = require('path')
 
 
 const createToken = (tokenid) => {
@@ -54,7 +55,7 @@ const confirmController = async (req, res, next) => {
                 req.user,
                 {verified: true}
             )
-            res.sendFile(path.join(__dirname, 'templates', 'confirmHtml.html'))
+            res.sendFile(path.join(__dirname, '..utils/templates', 'confirmHtml.html'))
     
         }
         else{
