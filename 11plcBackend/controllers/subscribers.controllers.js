@@ -54,7 +54,7 @@ const confirmController = async (req, res, next) => {
                 req.user,
                 {verified: true}
             )
-            res.sendFile('C:\\Windows\\System32\\11PLC\\11plcBackend\\utils\\templates\\confirmHtml.html')
+            res.sendFile('./confirmHtml.html')
     
         }
         else{
