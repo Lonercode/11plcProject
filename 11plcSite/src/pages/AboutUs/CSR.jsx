@@ -87,6 +87,7 @@ function CSR(){
 </div>
  
     <br/><br/>
+    <br/><br/>
     <Outlet/>
     </div>
     </>
