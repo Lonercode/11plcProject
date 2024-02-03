@@ -664,11 +664,11 @@ margin-top:6vw;
   }
 
   .carousel-inner p, h3 {
-    font-size: 3vw;
+    font-size: 4vw;
     color: white;
     top:1vh;
     left:0vh;
-    width: 30vw; 
+    width: 35vw; 
     position: relative;
     background: rgb(0,0,0,0.8);
     border-radius: 1vw;
@@ -679,6 +679,10 @@ margin-top:6vw;
     left:-9vh; 
     position: relative;
     font-size: 3vw;
+  }
+
+  .d-block {
+    height: 100vw;
   }
 
   #history img, #directors #mainImg ,#managementId {
@@ -1252,9 +1256,14 @@ margin-top:6vw;
     display: none;
   }
 
+  #img1 {
+    width: 50vw;
+  }
+
   #img2Again {
     display: block;
     margin-right: 8vw;
+    width: 30vw;
   }
 
   .offers #main {
@@ -1621,6 +1630,10 @@ margin-top:6vw;
 
     #text {
       margin-left: -10vw;
+    }
+
+    .d-block {
+      height: 100vw;
     }
   
 }
