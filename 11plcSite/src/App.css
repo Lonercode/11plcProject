@@ -681,9 +681,6 @@ margin-top:6vw;
     font-size: 3vw;
   }
 
-  .d-block {
-    height: 100vw;
-  }
 
   #history img, #directors #mainImg ,#managementId {
     width: 100%;
@@ -1632,9 +1629,7 @@ margin-top:6vw;
       margin-left: -10vw;
     }
 
-    .d-block {
-      height: 100vw;
-    }
+    
   
 }
 
