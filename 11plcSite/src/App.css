@@ -522,7 +522,7 @@ margin-top:6vw;
   }
 
   #img1 {
-    width: 40vw;
+    width: 50vw;
   }
 
   #img2Again {
@@ -664,11 +664,11 @@ margin-top:6vw;
   }
 
   .carousel-inner p, h3 {
-    font-size: 3.3vw;
+    font-size: 3vw;
     color: white;
     top:1vh;
     left:0vh;
-    width: 36vw; 
+    width: 30vw; 
     position: relative;
     background: rgb(0,0,0,0.8);
     border-radius: 1vw;
@@ -699,7 +699,7 @@ margin-top:6vw;
   }
 
   #text h4 {
-    font-size: 6vw;
+    font-size: 7vw;
   }
   
   #text p {
