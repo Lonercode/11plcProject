@@ -13,7 +13,7 @@ function Carousel(){
     <div className="carousel-inner">
       <div className="carousel-item active" data-bs-interval="6000">
         <img src="\images\josue-isai-ramos-figueroa-Pj4je7OjrME-unsplash.jpg" className="d-block w-100" alt="..." id = "firstImage"/>
-        <div className="carousel-caption" id = "firstImageText">
+        <div className="carousel-caption d-md-block" id = "firstImageText">
         <h3>WHO WE ARE</h3>
         <p>11 Plc is the exclusive authorized distributor to blend, pack, 
             <br/>distribute and market Mobil branded lubricants in Nigeria.</p>
@@ -22,7 +22,7 @@ function Carousel(){
     
     <div className="carousel-item"  data-bs-interval="6000">
       <img src="\images\vision.jpg" className="d-block w-100" alt="..."/>
-      <div className="carousel-caption d-none d-md-block">
+      <div className="carousel-caption d-md-block">
         <h3>OUR VISION</h3>
         <p>To be the number one company in Nigeria in terms of sustained service, 
             quality and reliability and the first brand preference by the consumer 
@@ -33,7 +33,7 @@ function Carousel(){
     
     <div className="carousel-item"  data-bs-interval="6000">
       <img src="\images\product1.jpg" className="d-block w-100" alt="..."/>
-      <div className="carousel-caption d-none d-md-block">
+      <div className="carousel-caption d-md-block">
         <h3>THE MISSION</h3>
         <p>Aim to provide the best in class products, 
             services and solutions to customers with a focus 
@@ -43,7 +43,7 @@ function Carousel(){
     
     <div className="carousel-item"  data-bs-interval="6000">
       <img src="\images\mission2.jpg" className="d-block w-100" alt="..."/>
-      <div className="carousel-caption d-none d-md-block">
+      <div className="carousel-caption d-md-block">
         <h3>QUALITY AND INTEGRITY</h3>
         <p>11plc recognizes that product quality and customer 
             satisfaction are of primary importance 
@@ -53,7 +53,7 @@ function Carousel(){
     
     <div className="carousel-item"  data-bs-interval="6000">
       <img src="\images\mobil-fam-II2.png" className="d-block w-100" alt="..."/>
-      <div className="carousel-caption d-none d-md-block">
+      <div className="carousel-caption d-md-block">
         <h3>MOBILE LUBRICANTS</h3>
         <p>Mobil Motor Oils Deliver Excellent Engine Protection</p>
         <button id = "carouselButton"><a href = "#">Learn More</a></button>
@@ -115,7 +115,7 @@ function Offer(){
               engine protection needed to meet the grueling demands of the race tracks. Our Mobil Super™ is at the 
               pinnacle of global family of premium passenger vehicle engine oils that provide different levels of 
               protection to match the conditions you face, so that you can drive with full confidence.</p>
-      <button><a href = "#">Find Your Product</a></button>
+      <button><a href = "#" id = "btn2">Find Your Product</a></button>
       </div>
       </div>
       

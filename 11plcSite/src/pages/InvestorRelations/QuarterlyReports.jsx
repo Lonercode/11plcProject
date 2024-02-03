@@ -11,7 +11,6 @@ function QuarterlyReports(){
         <p>3RD QUARTER 2023 - UNAUDITED FINANCIAL REPORT</p>
         <a href = "\docs\Mobim1.pdf">Click to download</a>
         </div>
-    <img src = "\images\quarter.jpg" id = "quarterImg"/>
     <br/>
     <Outlet/>
     </div>

@@ -8,8 +8,11 @@ import CSR from './pages/AboutUs/CSR'
 import Health from './pages/AboutUs/Health'
 import QuarterlyReports from './pages/InvestorRelations/QuarterlyReports'
 import {Route, Routes, BrowserRouter} from 'react-router-dom'
-import 'bootstrap/dist/css/bootstrap.css'
+
+import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap/dist/js/bootstrap.bundle'
+import $ from 'jquery'
+import popper from 'popper.js'
 import './App.css'
 import axios from 'axios'
 import { ToastContainer, toast} from 'react-toastify'
@@ -88,79 +91,97 @@ function Contact(){
 function Nav(){
   return (
     <>
-    <nav className = "mainNav">
-      <ul id = "mainul">
-        <li><img src = "\images\pngbgRemoved.png" id = "img1"></img></li>
-        <li><a href='/'>HOME</a></li>
-      
+   <nav class="navbar navbar-expand-lg bg-body-tertiary">
+   <img src = "\images\pngbgRemoved.png" id = "img1"/>
+   <img src = "\images\plc-logo-mobil.png" id = "img2Again"/>
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
 
-        <li className = "dropdown">
-          <a id = "mainDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role = "button">ABOUT US</a>
-        <ul className="dropdown-menu" id = "dropdownStuff">
-            <li><a className="dropdown-item" id = "stuffs" href="/AboutUs/OurHistory">Our History</a></li>
-            <li><a className="dropdown-item" id = "stuffs" href="/AboutUs/BoardOfDirectors">Board of Directors</a></li>
-            <li><a className="dropdown-item" id = "stuffs" href="/AboutUs/ManagementTeam">Management Team</a></li>
-            <li><a className="dropdown-item" id = "stuffs" href="/AboutUs/Awards">Award & Recognition</a></li>
-            <li><a className="dropdown-item" id = "stuffs" href="/AboutUs/CSR">CSR</a></li>
-            <li><a className="dropdown-item" id = "stuffs" href="/AboutUs/SSH&E">Health & Safety</a></li>
+      <li class="nav-item dropdown">
+          <a class="nav-link" href="/" role="button" aria-expanded="false">
+            <b>HOME</b>
+          </a>
+        </li>
+        
+      <li class="nav-item dropdown">
+          <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <b>ABOUT US</b>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="/AboutUs/OurHistory">Our History</a></li>
+            <li><a class="dropdown-item" href="/AboutUs/BoardOfDirectors">Board of Directors</a></li>
+            <li><a class="dropdown-item" href="/AboutUs/ManagementTeam">Management Team</a></li>
+            <li><a class="dropdown-item" href="/AboutUs/Awards">Award & Recognition</a></li>
+            <li><a class="dropdown-item" href="/AboutUs/CSR">CSR</a></li>
+            <li><a class="dropdown-item" href="/AboutUs/SSH&E">Health and Safety</a></li>
+          </ul>
+        </li>
+       
+        <li class="nav-item dropdown">
+          <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <b>INVESTOR RELATIONS</b>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="/InvestorRelations/quarterlyReports">Quarterly Reports</a></li>
+            <li><a class="dropdown-item" href="#">Annual Reports</a></li>
+            <li><a class="dropdown-item" href="#">Investors Information</a></li>
+            <li><a class="dropdown-item" href="#">Shareholders Downloads</a></li>
+            <li><a class="dropdown-item" href="#">Unclaimed Dividend</a></li>
           </ul>
         </li>
         
-
-        <li className = "dropdown">
-          <p id = "mainDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role = "button">INVESTOR RELATIONS</p>
-        <ul className="dropdown-menu" id = "dropdownStuff">
-            <li><a className="dropdown-item" id = "stuffs" href="/InvestorRelations/quarterlyReports">Quarterly Reports</a></li>
-            <li><a className="dropdown-item" id = "stuffs" href="#">Annual Reports</a></li>
-            <li><a className="dropdown-item" id = "stuffs" href="#">Investors Information</a></li>
-            <li><a className="dropdown-item" id = "stuffs" href="#">Shareholders Downloads</a></li>
-            <li><a className="dropdown-item" id = "stuffs" href="#">Unclaimed Dividend</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <b>LUBRICANTS</b>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Mobil Lubricants</a></li>
+            <li><a class="dropdown-item" href="#">Sub Distributor Locator</a></li>
+            <li><a class="dropdown-item" href="#">MobilServ Lubricant Analysis(MSLA)</a></li>
+            <li><a class="dropdown-item" href="#">Planned Engineering Services(PES)</a></li>
+            <li><a class="dropdown-item" href="#">Plant Study/Analysis</a></li>
+            <li><a class="dropdown-item" href="#">Training Program on Lubricants</a></li>
           </ul>
         </li>
 
-
-        <li className = "dropdown">
-          <p id = "mainDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role = "button">LUBRICANTS</p>
-        <ul className="dropdown-menu" id = "dropdownStuff">
-            <li><a className="dropdown-item" id = "stuffs" href="#">Mobil Lubricants</a></li>
-            <li><a className="dropdown-item" id = "stuffs" href="#">Sub Distributor Locator</a></li>
-            <li><a className="dropdown-item" id = "stuffs" href="#">MobilServ Lubricant Analysis (MSLA)</a></li>
-            <li><a className="dropdown-item" id = "stuffs" href="#">Planned Engineering Services (PES)</a></li>
-            <li><a className="dropdown-item" id = "stuffs" href="#">Plant Study/ Analysis</a></li>
-            <li><a className="dropdown-item" id = "stuffs" href="#">Training Program for Lubricants</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <b>FUEL</b>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Fuel</a></li>
+            <li><a class="dropdown-item" href="#">Filling Station Locator</a></li>
+            <li><a class="dropdown-item" href="#">Automotive Gas Oil(Diesel)</a></li>
+            <li><a class="dropdown-item" href="#">Aviation</a></li>
+            <li><a class="dropdown-item" href="#">Liquiefied Petroleum Gas(LPG)</a></li>
+            <li><a class="dropdown-item" href="#">Petroleum Motor Spirit(PMS)</a></li>
+            <li><a class="dropdown-item" href="#">Household Kerosene(HHK)</a></li>
           </ul>
         </li>
 
-
-        <li className = "dropdown">
-          <p id = "mainDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role = "button">FUEL</p>
-        <ul className="dropdown-menu" id = "dropdownStuff">
-            <li><a className="dropdown-item" id = "stuffs" href="#">Fuel</a></li>
-            <li><a className="dropdown-item" id = "stuffs" href="#">Filling Station Locator</a></li>
-            <li><a className="dropdown-item" id = "stuffs" href="#">Automotive Gas Oil (Diesel)</a></li>
-            <li><a className="dropdown-item" id = "stuffs" href="#">Aviation</a></li>
-            <li><a className="dropdown-item" id = "stuffs" href="#">Liquiefied Petroleum Gas (LPG)</a></li>
-            <li><a className="dropdown-item" id = "stuffs" href="#">Petroleum Motor Spirit (PMS)</a></li>
-            <li><a className="dropdown-item" id = "stuffs" href="#">Household Kerosene (HHK)</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <b>CONTACT</b>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Contact & Enquiries</a></li>
+            <li><a class="dropdown-item" href="#">Mobil Card</a></li>
+            <li><a class="dropdown-item" href="#">Whistle Blowing</a></li>
+            <li><a class="dropdown-item" href="#">Contact Details</a></li>
           </ul>
         </li>
-
-
-        <li><a href='#'>NEWS</a></li>
-        
-
-        <li className = "dropdown">
-          <p id = "mainDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role = "button">CONTACT</p>
-        <ul className="dropdown-menu" id = "dropdownStuff">
-            <li><a className="dropdown-item" id = "stuffs" href="#">Contact & Enquiries</a></li>
-            <li><a className="dropdown-item" id = "stuffs" href="#">Mobil Card</a></li>
-            <li><a className="dropdown-item" id = "stuffs" href="#">Whistle Blowing</a></li>
-            <li><a className="dropdown-item" id = "stuffs" href="#">Contact Details</a></li>
-          </ul>
-        </li>
-        <li><img src = "\images\plc-logo-mobil.png" id = "img2"></img></li>
       </ul>
-    </nav>
+    </div>
+  </div>
+  <img src = "\images\plc-logo-mobil.png" id = "img2"/>
+</nav>
+
+        
+       
     </>
   )
 }

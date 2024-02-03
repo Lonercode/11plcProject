@@ -29,12 +29,8 @@ function CSR(){
   }) 
   obs.forEach((one) => {
     observer.observe(one)
-  }) 
-
-  
+  })  
 })
-  
- 
   
   return (
     <>
