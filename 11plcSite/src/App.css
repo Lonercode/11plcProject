@@ -1,7 +1,7 @@
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 0;
+  padding: 1rem;
  /* background-color:  #242424;*/
  background-color: whitesmoke;
  scroll-behavior: smooth;
@@ -510,6 +510,7 @@ margin-top:6vw;
     padding-left: 1vw;
     padding-right: 1vw;
     text-align: justify;
+    
   }
 
   .container-fluid{
@@ -520,9 +521,14 @@ margin-top:6vw;
     display: none;
   }
 
+  #img1 {
+    width: 40vw;
+  }
+
   #img2Again {
     display: block;
     margin-right: 8vw;
+    width: 30vw;
   }
 
   .offers #main {
@@ -658,11 +664,11 @@ margin-top:6vw;
   }
 
   .carousel-inner p, h3 {
-    font-size: 3vw;
+    font-size: 3.3vw;
     color: white;
     top:1vh;
     left:0vh;
-    width: 30vw; 
+    width: 36vw; 
     position: relative;
     background: rgb(0,0,0,0.8);
     border-radius: 1vw;
@@ -693,7 +699,7 @@ margin-top:6vw;
   }
 
   #text h4 {
-    font-size: 5vw;
+    font-size: 6vw;
   }
   
   #text p {
