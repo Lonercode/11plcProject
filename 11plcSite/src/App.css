@@ -537,7 +537,7 @@ margin-top:6vw;
   }
 
   .offers {
-    padding: 0;
+    padding: 1rem;
   }
 
   .offers p{
@@ -616,6 +616,7 @@ margin-top:6vw;
     display:block;
     flex-direction: none;
     padding-left: 3vw;
+    padding: 1rem;
     
   }
 
@@ -1274,7 +1275,7 @@ margin-top:6vw;
   }
 
   .offers {
-    padding: 0;
+    padding: 1rem;
   }
 
   .offers p{
@@ -1356,6 +1357,7 @@ margin-top:6vw;
     flex-direction: none;
     padding-left: 3vw;
     font-size: 3vw;
+    padding: 1rem;
     
   }
 
